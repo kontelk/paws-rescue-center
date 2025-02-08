@@ -5,13 +5,14 @@ app = Flask(__name__)
 """1. Add a View Function for the Home page."""
 @app.route("/")
 def home():
-    return "Paws Rescue Center 🐾"
+    home_output_text = 'Paws Rescue Center 🐾'
+    return home_output_text
 
 """2. Add a View Function for the About page."""
 @app.route("/about")
 def learn():
-    about_text = """ We are a non-profit organization working as an animal rescue. We aim to help you connect with the purrfect furbaby for you! The animals you find on our website are rescued and rehabilitated animals. Our mission is to promote the ideology "adopt, don't hop"! """
-    return about_text
+    about_output_text = 'We are a non-profit organization working as an animal rescue. We aim to help you connect with the purrfect furbaby for you! The animals you find on our website are rescued and rehabilitated animals. Our mission is to promote the ideology "adopt, don\'t hop"!'
+    return about_output_text
 
 
 if __name__ == "__main__":
