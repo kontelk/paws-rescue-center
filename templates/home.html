@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Home - Paws Rescue Center</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
-</head>
-<body>
-  <h1 id = "title"><center>Paws Rescue Center 🐾</center></h1>
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block heading %}
+<center>Paws Rescue Center 🐾</center>
+{% endblock %}
+
+{% block content%}
   <table>
     <tr>
       <th>Image</th>
@@ -27,5 +27,4 @@
     </tr>
     {% endfor %}
   </table>
-</body>
-</html>
+{% endblock %}
